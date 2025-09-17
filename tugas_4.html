@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#433878 0%, #7E60BF 40%, #E4B1F0 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: 2px solid #7E60BF;
+            border-color: #433878;
+        }
+        button {
+            background-color: #433878;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #7E60BF;
+        }
+        h1 {
+            text-align: center;
+            color: #433878;
+            margin-bottom: 30px;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Machine Learning Seminar Registration</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name" class="required">Full Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required
+                    minlength="3"
+                    maxlength="50"
+                    placeholder="e.g., John Doe"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                    placeholder="example@domain.com"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="required">Phone Number</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required
+                    pattern="[0-9]{10,13}"
+                    placeholder="Enter 10-13 digit number"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="institution" class="required">Institution/Company</label>
+                <input 
+                    type="text" 
+                    id="institution" 
+                    name="institution" 
+                    required
+                    placeholder="Your university or company name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="session" class="required">Seminar Session</label>
+                <select id="session" name="session" required>
+                    <option value="" disabled selected>Select your preferred session</option>
+                    <option value="morning">Morning: Intro to ML (09:00 - 11:00)</option>
+                    <option value="afternoon">Afternoon: Deep Learning (13:00 - 15:00)</option>
+                    <option value="evening">Evening: Neural Networks (15:30 - 17:30)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="experience" class="required">Experience Level</label>
+                <select id="experience" name="experience" required>
+                    <option value="" disabled selected>Choose your experience level</option>
+                    <option value="beginner">Beginner - No prior experience</option>
+                    <option value="intermediate">Intermediate - Basic understanding</option>
+                    <option value="advanced">Advanced - Practical experience</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="expectations">Special Requirements or Questions</label>
+                <textarea 
+                    id="expectations" 
+                    name="expectations" 
+                    rows="4"
+                    placeholder="Share any specific topics you'd like covered or questions you have"
+                ></textarea>
+            </div>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </div>
+</body>
+</html>

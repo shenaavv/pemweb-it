@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        figure {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        figure:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeri Fotografi ITS</h1>
+
+    <div class="gallery-container">
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Tower 2 ITS">
+            <figcaption>Tower 1 ITS</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Tower 1 ITS">
+            <figcaption>Tower 2 ITS</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Rektorat ITS">
+            <figcaption>Rektorat ITS</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://placehold.co/300x200" alt="Bundaran ITS">
+            <figcaption>Bundaran ITS</figcaption>
+        </figure>
+
+         <figure>
+            <img src="https://placehold.co/300x200" alt="Graha ITS">
+            <figcaption>Graha ITS</figcaption>
+        </figure>
+
+         <figure>
+            <img src="https://placehold.co/300x200" alt="Research Center">
+            <figcaption>Research Center</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
